@@ -39,10 +39,14 @@ Blockly.JavaScript[blockName] = function (block) {
     const content = Blockly.JavaScript.valueToCode(block, "CONTENT", Blockly.JavaScript.ORDER_ATOMIC) || "No content"
     const boolean = Blockly.JavaScript.valueToCode(block, "BOOLEAN", Blockly.JavaScript.ORDER_ATOMIC) || true
     let button = Blockly.JavaScript.valueToCode(block, "BUTTON", Blockly.JavaScript.ORDER_ATOMIC);
-    const buttonArg = block.getInput('BUTTON')
-    const buttonBlock = buttonArg.connection.targetConnection.sourceBlock_
-    if (buttonBlock.type === 'text' || buttonBlock.type === 'jg_text_remake_paragraph_quotes') {
-        button = button.slice(1, -1)
+    if (!button) {
+        button = ''
+    } else {
+        const buttonArg = block.getInput('BUTTON')
+        const buttonBlock = buttonArg.connection.targetConnection.sourceBlock_
+        if (buttonBlock.type === 'text' || buttonBlock.type === 'jg_text_remake_paragraph_quotes') {
+            button = button.slice(1, -1)
+        }
     }
 
     if (block.getInput("CONTENT").connection.targetConnection) {
