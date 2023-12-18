@@ -13,7 +13,7 @@ export default async function require(array, code, js) {
         array.push(`const QRCode = require('qrcode')`)
     }
     if (js.includes('s4d.client.dashboard = new Dashboard')) {
-        array.push(`const Dashboard = require('discord-easy-dashboard');`)
+        array.push(`const Dashboard = require('@frostzzone/discord-easy-dashboard');`)
     }
     if (js.includes("tempChannels.registerChannel")) {
         array.push(`const TempChannels = require("discord-temp-channels");`)
@@ -276,7 +276,7 @@ const S4D_WEBSITECREATION_EXPRESS_app = S4D_WEBSITECREATION_EXPRESS();`)
         code.push('s4d.database = new Database(\'./database.json\')')
     }
     if (js.includes("OpenAIApi")) {
-        array.push('const { Configuration, OpenAIApi } = require("openai");')
+        array.push('const OpenAI = require("openai");')
     }
     if (js.includes("_S4D_inventionFSHapi")) {
         code.push(`async function _S4D_inventionFSHapi(_S4D_fshurl, _S4D_fshquery) {
