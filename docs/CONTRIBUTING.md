@@ -1,8 +1,8 @@
-# Contributing to Scratch for Discord
+# Contributing to Scratch for Goobers
 
 Thanks for taking the time to contribute! ❤️
 
-The following is a set of guidelines for contributing to Scratch for Discord. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request. These guidelines have been adapted from [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md).
+The following is a set of guidelines for contributing to Scratch for Goobers. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request. These guidelines have been adapted from [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md).
 
 #### Table Of Contents
 
@@ -27,15 +27,15 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 ## What should I know before I get started?
 
-### Scratch for Discord Architecture
+### Scratch for Goobers Architecture
 
-Scratch for Discord is currently divided into two main pieces--frontent application and backend
+Scratch for Goobers is currently divided into two main pieces--frontent application and backend
 
 ## How Can I Contribute?
 
 ### Reporting Bugs
 
-This section guides you through submitting a bug report for Scratch for Discord. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
+This section guides you through submitting a bug report for Scratch for Goobers. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
 Before creating bug reports, please check [this list](#before-submitting-a-bug-report) as you might find out that you don't need to create one. When you are creating a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report).
 
@@ -86,7 +86,7 @@ Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com
 * **Provide specific examples to demonstrate the steps**. Include copy/pasteable snippets which you use in those examples, as [Markdown code blocks](https://help.github.com/articles/markdown-basics/#multiple-lines).
 * **Describe the current behavior** and **explain which behavior you expected to see instead** and why.
 * **Include screenshots or animated GIFs** which help you demonstrate the steps or point out the part of BetterDiscord which the suggestion is related to.
-* **Explain why this enhancement would be useful** to most Scratch for Discord users and isn't something that can or should be implemented as a block.
+* **Explain why this enhancement would be useful** to most Scratch for Goobers users and isn't something that can or should be implemented as a block.
 
 ### Pull Requests
 

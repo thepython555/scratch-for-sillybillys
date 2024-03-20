@@ -1,5 +1,5 @@
 <template>
-        <b-nav-item @click="changelog">Changelog</b-nav-item>
+        <b-nav-item @click="changelog">create log</b-nav-item>
 </template>
 
 
@@ -69,15 +69,13 @@ export default {
                       width: 45%;
                     }
                   </style>
-                  <h2>Changelog</h2>
+                  <h2>create log</h2>
                   </div>
-                  <p style="font-weight: bold;">Detailed logs are posted in our official <a style="color: #5865F2;" href="https://discord.gg/TsQPMrNyBv/">Discord</a> Server</p>
                   
                   <div class="latest-change">
                       <div>
-                  <time datetime="09/11/2022">09/11/2022 - JeremyGamer13</time>
-                    <h3>updated the shortcuts menu to look a bit nicer</h3>
-                    <img src="https://cdn.discordapp.com/attachments/935597297528610856/1018421563202228274/unknown.png" alt="Updated popups" class="img-size2"></img> 
+                  <time datetime="09/11/2022">03/20/2024 - dumorando</time>
+                    <h3>i created it thats why its called the create log</h3>
                   </div>
                   </div>
                   <details>

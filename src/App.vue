@@ -145,6 +145,9 @@ import "./blocks/JeremyGamer13/"
 import "./blocks/JeremyGamer13/jimpBlocks"
 import "./blocks/JeremyGamer13/fileEdit"
 
+// scratch for brainrot 
+import "./blocks/scratch-for-brainrot";
+
 // Farf things
 
 import "./blocks/charts/";

@@ -315,7 +315,7 @@ module.exports.menus.createMenu = (data) => {
     if (data.canminimize == false) minimizeButton.remove()
     menu.topbar.contentDiv.append(buttonDiv)
     const label = document.createElement("p")
-    label.innerHTML = data.title ? data.title : "Scratch For Discord"
+    label.innerHTML = data.title ? data.title : "Scratch For Goobers"
     menu.topbar.contentDiv.append(label)
     menu.topbar.append(menu.topbar.contentDiv)
     menu.prepend(menu.topbar)

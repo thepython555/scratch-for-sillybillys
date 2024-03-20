@@ -121,7 +121,7 @@ export const websiteMessages = {
         }
     },
     warnings: {
-        login_block: "The \"Connect to Discord\" block in the \"Base\" category is required."
+        login_block: "discord is poo poo use guilded"
     },
     run_modal: {
         title: "Click Start to test your bot!",

@@ -2,7 +2,7 @@
     <b-navbar toggleable="lg" type="dark" style="background-color:#161719;user-select:none;" id="navbar nav-main">
         <b-navbar-brand style="font-size: 120%;">
             <button id="hideAllGuiElements" class="hide-gui-button"><img :src="decideNavBarImage" width="35" draggable="false" id="navigationBarS4DImage"></button>
-            Scratch For Discord
+            Scratch For Goobers
         </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -14,9 +14,6 @@
                 <EditMenu style="font-size: small;"></EditMenu>
                 <!--<ToolboxModal style="font-size: small;"></ToolboxModal>-->
                 <!--<LanguageMenu></LanguageMenu>-->
-                <ExamplesMenu style="font-size: small;"></ExamplesMenu>
-                <Socials style="font-size: small;"></Socials>
-                <Forums style="font-size: small;"></Forums>
                 <drtrrlrlrlrlrl style="font-size: small;"></drtrrlrlrlrlrl>
                 <changelog style="font-size: small;"></changelog>
                 <shortcuts style="font-size: small;"></shortcuts>
@@ -100,15 +97,22 @@ export default {
         //             this.$store.state.workspace.getAllBlocks().every((block) => !block.disabled && !block.warning);
         // },
         decideNavBarImage: function() {
-            return window.location.origin + "/scratch.png"
+            return window.location.origin + "/scratchforgoobers.png"
         }
     },
     mounted(){
+    this.$swal({
+                title: "dont",
+                icon: "warning",
+                buttons: {
+                    ok: "I understand"
+                },
+            })
         document.getElementById("docName").addEventListener("input", function() {
             if (document.querySelector("#docName").textContent == "") {
                 document.querySelector("#docName").textContent = "Untitled document"
             }
-            document.title = `Scratch For Discord 469 - ${document.querySelector("#docName").textContent}`;
+            document.title = `Scratch For Goobers Beta - ${document.querySelector("#docName").textContent}`;
         }, false);
         const element = document.querySelector("#docName");
         element.spellcheck = false;
@@ -216,7 +220,7 @@ export default {
                 let blockProblems = []
                 let allBlocks = workspace.getAllBlocks()
                 if (!allBlocks.some((block) => block.type === "s4d_login")) {
-                    problems.push(`<li style='text-align:left'>The <b>Connect to Discord</b> block is missing.</li>`)
+                    problems.push(`<li style='text-align:left'>The fail block is missing.</li>`)
                 }
                 allBlocks.forEach(block => {
                     if (block.warning) {
@@ -225,9 +229,9 @@ export default {
                     }
                 })
                 let newString = ""
-                if (problems.length > 0 || problematic) {
+                if ("asdasd" == "fdggsgfd") {
                     newString = `<h2>Hold up!</h2>
-<p>Some problems on the workspace need to be solved before you can get a working download.</p>
+<p>im gona kjdnmjfdvjuimfvmjuiujimifduivmfduijmvfdvji</p>
 <ul>
 `
                     newString += problems.join("")
@@ -246,12 +250,10 @@ export default {
                 return newString
             }
             const wrapper = document.createElement('div');
-            wrapper.innerHTML = `${getWorkspaceProblems(this.$store.state.workspace)}<h6>How to start your bot once downloaded?</h6>
+            wrapper.innerHTML = `${getWorkspaceProblems(this.$store.state.workspace)}<h6>How to start your app once downloaded?</h6>
 <ul>
-<li style='text-align:left'>Unzip the Downloaded File.</li>
-<li style='text-align:left'>Install NPM and Node.js (Hint: Google Search).</li>
-<li style='text-align:left'>Run 'npm install' and 'npm start' in a terminal</li>
-<li style='text-align:left'>Your bot is started!</li>
+<li style='text-align:left'>YOU DONT</li>
+<li style='text-align:left'>ha ha xd jk all you need to do is open the index.html file and if it doesnt work its your fault.</li>
 </ul>
 <style>
 .lololoEPIC_EXPORT_CLASS_NAME_bruh_xd_1123123123 {
@@ -259,7 +261,7 @@ export default {
 }
 </style>`;
             this.$swal({
-                title: "Download your bot?",
+                title: "Download your app?",
                 content: wrapper,
                 className: "lololoEPIC_EXPORT_CLASS_NAME_bruh_xd_1123123123",
                 buttons: {
@@ -281,7 +283,7 @@ export default {
                     zip.file("blocks.xml", xmlContent);
                     const javascriptContent = this.getWorkspaceCode();
                     if (javascriptContent.includes("queue.join") && javascriptContent.includes("queue.connect")) {
-                        swal.fire("Sorry, but Retro and Jose music blocks do not work together.")
+                        swal.fire("Sorry, but hah you suck xd")
                         return;
                     }/*
                     if (String(javascriptContent).includes("let serverjs = ")) {
@@ -1744,17 +1746,18 @@ load()`])
             //     <li style='text-align:left'>${this.$t('download.content.done')}</li>
             // </ul>-->`;
             const wrapper = document.createElement('div');
-            wrapper.innerHTML = `<h6>You will have to manually stop your bot in Discord!</h6>You also might not get a response until the bot gets an error, or stops.`
+            wrapper.innerHTML = `<h6>Its shit</h6>Idk if it even works man :(`
             this.$swal({
-                title: "Start your bot?",
+                title: "Stop it",
                 icon: "warning",
                 content: wrapper,
                 buttons: {
                     cancel: "Cancel",
-                    run: "Yes!"
+                    run: "Dont click this button please its for your own sanity and mine i dont want any github issues not like there is gonna be any cuz no one is gonna use this app!"
                 },
             }).then(async (result) => {
                 if (result == "run") {
+                    window.isInS4DDebugMode == true // get obliterated
                     console.log("johnathan: run the bot bro")
                     console.log("barry: mk lemme just package up the code they made")
                     console.log("johnathan: ok tell me when your done")
@@ -1837,7 +1840,7 @@ load()`])
                     } else if (
                         window.isInS4DDebugMode == true
                     ) {
-                        swal.fire("S4D is currently in debug mode.", "Please disable debug mode to run your bot.", "error")
+                        swal.fire("S4G is currently in debug mode.", "This is a lame ass excuse to get out of having to run your shitty application.  Its cuz im too lazy to rewrite how the run system works just for this ", "error")
                         console.log("barry: placeholder")
                         console.log("johnathan: placeholder")
                         console.error("placeholder")
